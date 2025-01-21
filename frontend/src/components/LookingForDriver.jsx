@@ -2,7 +2,6 @@
 import 'react'
 
 const LookingForDriver = (props) => {
- if (!props.isVisible) return null; // Do not render the panel if isVisible is false
     
     return (
         <div>
