@@ -74,6 +74,8 @@
 import React from 'react';
 
 const LookingForDriver = (props) => {
+    if (!props.isVisible) return null; // Do not render the panel if isVisible is false
+
     return (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
             <div className="relative w-[90%] max-w-md bg-white rounded-lg shadow-lg p-6">
